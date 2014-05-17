@@ -1,0 +1,26 @@
+za | inside a method | open and close a fold
+
+splits:
+Vertical Split : Ctrl+w + v
+Horizontal Split: Ctrl+w + s
+Close current windows: Ctrl+w + q
+
+nnoremap <leader>a :Ag 
+
+map <leader>td <Plug>TaskList
+
+let g:pep8_map='<leader>8'
+
+CTRL-u Moves screen up ½ page
+CTRL-d Moves screen down ½ page
+CTRL-b Moves screen up one page
+CTRL-f Moves screen down one page
+
+map <leader>cc :botright cope<cr>
+map <leader>co ggVGy:tabnew<cr>:set syntax=qf<cr>pgg
+map <leader>n :cn<cr>
+map <leader>p :cp<cr>
+
+map <leader>ll :lop<cr>
+map <leader>lp :lprevious<cr>
+map <leader>ln :lnext<cr>
