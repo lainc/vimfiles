@@ -24,3 +24,5 @@ map <leader>p :cp<cr>
 map <leader>ll :lop<cr>
 map <leader>lp :lprevious<cr>
 map <leader>ln :lnext<cr>
+
+:Regex [python]
