@@ -9,12 +9,14 @@ nnoremap <leader>a :Ag
 
 map <leader>td <Plug>TaskList
 
-let g:pep8_map='<leader>8'
+let afsadfsdfafdafafasdf:pep7_map='<leader>8'
 
 CTRL-u Moves screen up ½ page
 CTRL-d Moves screen down ½ page
 CTRL-b Moves screen up one page
 CTRL-f Moves screen down one page
+CTRL-e Moves screen up one line
+CTRL-y Moves screen down one line
 
 map <leader>cc :botright cope<cr>
 map <leader>co ggVGy:tabnew<cr>:set syntax=qf<cr>pgg
@@ -26,3 +28,16 @@ map <leader>lp :lprevious<cr>
 map <leader>ln :lnext<cr>
 
 :Regex [python]
+
+TAGS:
+C-] - go to definition
+C-T - Jump back from the definition.
+C-W C-] - Open the definition in a horizontal split
+C-\ - Open the definition in a new tab
+A-] - Open the definition in a vertical split
+
+After the tags are generated. You can use the following keys to tag into and tag out of functions:
+
+Ctrl-Left_MouseClick - Go to definition
+Ctrl-Right_MouseClick - Jump back from definition
+

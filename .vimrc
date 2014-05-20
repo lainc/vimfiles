@@ -143,7 +143,7 @@ set foldcolumn=1
 " Enable syntax highlighting
 syntax on 
 
-"set background=dark
+set background=light
 
 " Set extra options when running in GUI mode
 if has("gui_running")
@@ -168,6 +168,11 @@ set nobackup
 set nowb
 set noswapfile
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => vim-expand-regions plugin
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+map = <Plug>(expand_region_expand)
+map K <Plug>(expand_region_shrink)
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Text, tab and indent related
@@ -262,6 +267,15 @@ nnoremap <leader>sv :source $MYVIMRC<CR>
 nnoremap <leader>u :GundoToggle<CR>
 map <leader>j :CtrlP<cr>
 
+""""""""""""""""""""""""""""""
+" => Exuberant Ctags
+""""""""""""""""""""""""""""""
+set tags=./tags;/ 
+map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+"A-] - Open the definition in a vertical split
+map <f11> :!start /min ctags -R .<cr>
+"map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+"C-\ - Open the definition in a new tab
 
 """"""""""""""""""""""""""""""
 " => The Silver Searcher
@@ -324,7 +338,7 @@ map <leader>o :BufExplorer<cr>
 "nnoremap <leader>w :w<CR>
 "nnoremap <leader>l :call ToggleNumber()<CR>
 "nnoremap <leader><space> :noh<CR>
-"nnoremap <leader>s :mksession<CR>
+nnoremap <leader>s :mksession<CR>
 "nnoremap <leader>c :SyntasticCheck<CR>:Errors<CR>
 "nnoremap <leader>1 :set number!<CR>
 "nnoremap <leader>d :Make! 
