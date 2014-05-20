@@ -41,3 +41,5 @@ After the tags are generated. You can use the following keys to tag into and tag
 Ctrl-Left_MouseClick - Go to definition
 Ctrl-Right_MouseClick - Jump back from definition
 
+most recently entered command in the : register 
+most recently searched expression in the / register
