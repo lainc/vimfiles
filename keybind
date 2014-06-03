@@ -18,6 +18,10 @@ CTRL-f Moves screen down one page
 CTRL-e Moves screen up one line
 CTRL-y Moves screen down one line
 
+zz move current line to the middle of the screen
+zt - move current line to the top of the screen
+zb - move current line to the bottom of the screen
+
 map <leader>cc :botright cope<cr>
 map <leader>co ggVGy:tabnew<cr>:set syntax=qf<cr>pgg
 map <leader>n :cn<cr>
